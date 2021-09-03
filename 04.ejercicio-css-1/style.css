@@ -1,0 +1,37 @@
+#provincias li:last-child {
+    background-color: #0000ff;
+}
+
+.lista li:nth-child(2n + 1) {
+    text-decoration: underline green;
+}
+
+#provincias li:nth-child(2n + 1) {
+    text-decoration: underline green;
+}
+
+.lista {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+ul.lista li + li {
+    content: 'em-100';
+}
+
+.lista : lang(en){
+    font-size 31px;
+    text-transform: uppercase;
+}
+
+#provincias{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+#provincias li:nth-child(2){
+    list-style-type: circle;
+}
